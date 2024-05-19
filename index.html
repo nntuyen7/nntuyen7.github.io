@@ -15,10 +15,32 @@
             background-image: url('NewYork.JPG');
             /* Full height */
             height: 100%; 
-            /* Center and scale the image nicely */
+            /* Center the background image */
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 200% 100%;
+            /* Display half of the image */
+            background-size: cover;
+        }
+        .nav-bar {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .nav-bar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
         }
         .centered {
             position: absolute;
@@ -32,8 +54,13 @@
     </style>
 </head>
 <body>
+    <div class="nav-bar">
+        <a href="about.html">About Me</a>
+        <a href="work.html">Work</a>
+        <a href="travel.html">Travel</a>
+    </div>
     <div class="bg">
-        <div class="centered">taylor nguyen</div>
+        <div class="centered">Taylor Nguyen</div>
     </div>
 </body>
 </html>
