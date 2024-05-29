@@ -4,15 +4,11 @@ body, html {
     font-family: Baskerville, serif;
 }
 .background {
-    background-image: url('https://nntuyen7.github.io/pictures/NewYork1.JPG');
-    background-repeat: no-repeat;
-    background-position: center top; /* Position the image to start from the top center */
-    background-size: 200% 100%; /* Scale the image to twice its width to show only half */
-    margin: 0;
-    padding: 0;
-    height: 500px; /* Set height to make the background visible */
-    width: 100%; /* Make sure it covers the full width of the container */
-    overflow: hidden;
+     background-image: url('https://nntuyen7.github.io/pictures/NewYork1.JPG');
+     background-position: top;
+     background-size: 100% auto; /* Ensures the width fits the element */
+     height: 40%; /* Adjusts the height to show only the top half */
+     overflow: hidden; /* Ensures the bottom part of the image is not visible */
 }
 img {
     max-width: 100%;
