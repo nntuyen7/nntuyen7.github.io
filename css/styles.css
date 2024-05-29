@@ -5,12 +5,9 @@ body, html {
 }
 .background {
     background-image: url('https://nntuyen7.github.io/pictures/Seattle.jpeg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 50%; /* or set a specific height in pixels like 250px */
-    overflow: hidden;
-    width: 100%; /* Ensure the width of the container */
+    background-repeat:no-repeat;
+    max-width: 100%;
+    height: auto;
 }
 img {
     max-width: 100%;
