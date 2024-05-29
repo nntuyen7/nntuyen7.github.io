@@ -4,7 +4,7 @@ body, html {
     font-family: Baskerville, serif;
 }
 .background {
-    background-image: url("pictures/NewYork1.JPG");
+    background-image: url(pictures/NewYork1.JPG);
     background-repeat: no-repeat;
     background-position: center top; /* Position the image to start from the top center */
     background-size: 200% 100%; /* Scale the image to twice its width to show only half */
