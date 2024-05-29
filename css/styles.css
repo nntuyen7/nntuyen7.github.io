@@ -3,6 +3,17 @@ body, html {
     margin: 0;
     font-family: Baskerville, serif;
 }
+.background
+{
+    background-image: "pictures/NewYork1.JPG";
+    background-repeat: no-repeat;
+    background-position: top;
+    margin : 0px;
+    padding : 0px;
+    height: 18px;
+    width : 18px;
+    overflow : hidden;
+}
 img {
     max-width: 100%;
     height: auto;
