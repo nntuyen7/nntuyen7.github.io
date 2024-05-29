@@ -3,16 +3,16 @@ body, html {
     margin: 0;
     font-family: Baskerville, serif;
 }
-.background
-{
+.background {
     background-image: url("pictures/NewYork1.JPG");
     background-repeat: no-repeat;
-    background-position: top;
-    margin : 0px;
-    padding : 0px;
-    height: 18px;
-    width : 18px;
-    overflow : hidden;
+    background-position: center top; /* Position the image to start from the top center */
+    background-size: 200% 100%; /* Scale the image to twice its width to show only half */
+    margin: 0;
+    padding: 0;
+    height: 500px; /* Set height to make the background visible */
+    width: 100%; /* Make sure it covers the full width of the container */
+    overflow: hidden;
 }
 img {
     max-width: 100%;
