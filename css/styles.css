@@ -20,24 +20,21 @@ h1 {
 
 
 .nav-bar {
-    display: flex; /* Enables Flexbox on the navbar */
-    justify-content: center; /* Centers the links horizontally */
-    align-items: center; /* Aligns the items vertically */
     overflow: hidden;
-    position: fixed; /* Ensures the navbar stays at the top */
+    background-color: rgba(43, 33, 40, 0.514); /* Semi-transparent background */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    
 }
 .nav-bar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 30px 100px;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 .nav-bar a:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -106,7 +103,6 @@ footer {
     justify-content: space-between; /* Distributes space between items */
     align-items: center; /* Aligns items vertically center */
     position: relative;
-    background-color: rgba(43, 33, 40, 0.514);
     z-index: 1;
 }
 
