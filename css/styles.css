@@ -89,6 +89,7 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 40px auto;
+    border-radius: 2%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center content */
 }
@@ -105,5 +106,6 @@ body {
     width: 100%; /* Set the width of the image */
     height: 100%; /* Set the height of the image */
     object-fit: cover; /* Ensure the image covers the entire space */
+    border-radius: 2%; /* Make the image round */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
