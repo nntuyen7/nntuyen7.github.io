@@ -1,11 +1,13 @@
+/* General Styles */
 body, html {
     height: 100%;
     margin: 0;
     font-family: Baskerville, serif;
+    display: flex;
+    flex-direction: column;
 }
-h1 {
-    text-align: center;
-}
+
+/* Background Styles */
 .background {
     position: fixed;
     top: 0;
@@ -18,7 +20,7 @@ h1 {
     z-index: -1; /* Ensures the background is behind other elements */
 }
 
-
+/* Navbar Styles */
 .nav-bar {
     display: flex; /* Enables Flexbox on the navbar */
     justify-content: center; /* Centers the links horizontally */
@@ -28,21 +30,43 @@ h1 {
     top: 0;
     width: 100%;
     z-index: 1000;
-    
+    background-color: rgba(43, 33, 40, 0.514); /* Semi-transparent background */
 }
+
 .nav-bar a {
-    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 30px 100px;
+    padding: 20px 30px;
     text-decoration: none;
     font-size: 20px;
 }
+
 .nav-bar a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .nav-bar a {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar a {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+/* Centered Element */
 .centered {
     position: absolute;
     top: 50%;
@@ -54,13 +78,8 @@ h1 {
     background-color: yellow; /* Yellow highlight */
     padding: 5px 10px; /* Padding for highlight */
 }
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Baskerville, serif;
-    display: flex;
-    flex-direction: column;
-}
+
+/* Content Styles */
 .content {
     flex: 1; /* Ensures the content takes up all available space */
     padding: 60px 20px;
@@ -75,9 +94,11 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center content */
 }
+
 .about-me h2 {
     text-align: center;
 }
+
 .about-me p {
     text-align: justify;
 }
@@ -93,12 +114,6 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
-    margin-top: 60px; /* Same height as the nav-bar */
-}
-
 /* Footer Styles */
 footer {
     color: #000000;
@@ -108,6 +123,7 @@ footer {
     position: relative;
     background-color: rgba(43, 33, 40, 0.514);
     z-index: 1;
+    padding: 20px; /* Adds padding for better spacing */
 }
 
 .footer-left {
@@ -129,4 +145,17 @@ footer {
 
 .socials img {
     width: 32px;
+}
+
+/* Responsive Footer for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .socials {
+        justify-content: center;
+        margin: 10px 0;
+    }
 }
